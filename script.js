@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("height", height.value);
   });
   bgColor.addEventListener("input", () => {
-    localStorage.setItem("bgColor", bgColor.value);
     preview.style.backgroundColor = bgColor.value;
+    localStorage.setItem("bgColor", bgColor.value);
   });
   borderSize.addEventListener("input", () => {
     preview.style.border = `${borderSize.value}px solid ${borderColor.value}`;

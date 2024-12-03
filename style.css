@@ -134,3 +134,16 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* By Younes Amazzal */
+
+@media screen and (min-width: 100px) and (max-width: 1024px) {
+  body {
+    gap: 0px;
+  }
+  .preview-conteiner {
+    scale: 0.7;
+    min-height: 600px;
+    min-width: 600px;
+    max-height: 600px;
+    max-width: 600px;
+  }
+}
