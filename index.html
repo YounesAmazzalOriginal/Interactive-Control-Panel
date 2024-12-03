@@ -6,35 +6,67 @@
     <title>Interactive Control Panel</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="control-panel">
       <h2>Control Panel</h2>
 
-      <label for="width">Width:</label>
-      <input type="range" id="width" min="100" max="500" value="300" />
-      <span id="widthValue">300px</span><br />
+      <div class="content">
+        <label for="width">Width:</label>
+        <input type="range" id="width" min="100" max="500" value="300" />
+        <span id="widthValue">300px</span>
+      </div>
 
-      <label for="height">Height:</label>
-      <input type="range" id="height" min="100" max="500" value="300" />
-      <span id="heightValue">300px</span><br />
+      <div class="content">
+        <label for="height">Height:</label>
+        <input type="range" id="height" min="100" max="500" value="300" />
+        <span id="heightValue">300px</span>
+      </div>
 
-      <label for="bgColor">Background Color:</label>
-      <input type="color" id="bgColor" value="#3498db" /><br />
+      <div class="content">
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" value="#14B244" />
+      </div>
+      <div class="content">
+        <label for="borderSize">Border Size:</label>
+        <input type="range" id="borderSize" min="0" max="20" value="10" />
+        <span id="borderSizeValue">10px</span>
+      </div>
 
-      <label for="borderSize">Border Size:</label>
-      <input type="range" id="borderSize" min="0" max="20" value="5" /><br />
-      <span id="borderSizeValue">5px</span><br />
+      <div class="content">
+        <label for="borderColor">Border Color:</label>
+        <input type="color" id="borderColor" value="#0080FF" />
+      </div>
+      <div class="content">
+        <label for="borderRadius">Border Radius:</label>
+        <input type="range" id="borderRadius" min="0" max="100" value="0" />
+        <span id="borderRadiusValue">0%</span>
+      </div>
 
-      <label for="borderColor">Border Color:</label>
-      <input type="color" id="borderColor" value="#2c3e50" /><br />
-
-      <label for="boxShadow">Box Shadow:</label>
-      <input type="range" id="boxShadow" min="0" max="50" value="10" /><br />
-      <span id="boxShadowValue">10px</span><br />
+      <div class="content">
+        <label for="boxShadow">Box Shadow:</label>
+        <input type="range" id="boxShadow" min="0" max="50" value="10" />
+        <span id="boxShadowValue">10px</span>
+      </div>
     </div>
 
-    <div class="resizable-div" id="resizableDiv"></div>
-
+    <div class="preview-conteiner">
+      <div class="preview"></div>
+    </div>
   </body>
 </html>
